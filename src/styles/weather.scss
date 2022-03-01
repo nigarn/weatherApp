@@ -1,0 +1,76 @@
+@use "colors.scss" as c;
+.wt-window {
+  background-color: c.$app_bg;
+  width: 300px;
+  height: 500px;
+  margin: 50px auto;
+  border-radius: 8px;
+  //position: relative;
+}
+.select-box {
+  width: 100%;
+  text-align: left;
+  //height: 50px;
+}
+.definition {
+  width: 100%;
+  // position: absolute;
+  // top: 39px;
+  left: 0;
+  background-color: #552cad;
+  color: white;
+  background-color: c.$primary_color;
+  padding: 20px;
+}
+.temp {
+  font-size: 24px;
+    position: relative;
+    display: flex;
+    left: 10%;
+    align-items: center;
+   p{
+      position: absolute;
+      top: 17px;
+      left: -25px;
+    }
+
+}
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  p{
+    font-size: 40px;
+  }
+  img{
+    width: 115px;
+  }
+}
+.additional{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 25px;
+
+  &__item{
+    width: 25%;
+    .item_name{
+      font-size: 10px;
+    }
+    svg{
+      font-size: 45px;
+      margin-top: 10px;
+    }
+  }
+  .feels{
+    display: flex;
+    justify-content: center;
+    svg{
+      margin: -5px;
+    }
+  }
+}
+
